@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "539852611187",
+    "firebase_url": "https://coursevisualizer-68d21.firebaseio.com",
+    "project_id": "coursevisualizer-68d21",
+    "storage_bucket": "coursevisualizer-68d21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539852611187:android:84d63fd6db0f1259da9406",
+        "android_client_info": {
+          "package_name": "com.example.coursevisualizer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539852611187-fs3t60ud1g8rhck8eh816r0ddnd2io0h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5Er27f_HN4tQaFEr56V6_VPips_KUkXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539852611187-fs3t60ud1g8rhck8eh816r0ddnd2io0h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
