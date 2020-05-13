@@ -3,8 +3,10 @@ package com.example.coursevisualizer;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.github.mikephil.charting.charts.PieChart;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
@@ -19,6 +21,11 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+
+
+
+
+//    private Button showPie;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -39,6 +46,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+  
+  //        showPie = (Button) findViewById(R.id.showPie);
+//        showPie.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openPieChartActivity();
+//            }
+//        });
+    }
+
+//    private void openPieChartActivity() {
+//        Intent pieIntent = new Intent(this, PieChartActivity.class);
+//        startActivity(pieIntent);
+//    }
 
 
         mAuth = FirebaseAuth.getInstance();
@@ -95,4 +117,5 @@ public class MainActivity extends AppCompatActivity {
             });
         }
     }
+
 }
