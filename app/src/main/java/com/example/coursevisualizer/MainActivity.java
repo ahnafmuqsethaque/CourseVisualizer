@@ -1,5 +1,6 @@
 package com.example.coursevisualizer;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -39,12 +40,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         mAuth = FirebaseAuth.getInstance();
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(FirebaseAuth firebaseAuth) {
                 if (firebaseAuth.getCurrentUser() != null) {// if the user has successfully logged in
                     //Change to screen after log in here :)
+//                    Intent i = new Intent(MainActivity.this, LoginTestActivity.class);
+//                    startActivity(i);
                 }
             }
         };
@@ -83,6 +87,9 @@ public class MainActivity extends AppCompatActivity {
                     if(!task.isSuccessful()) {
                         //change this to display a proper error message
                         Toast.makeText(MainActivity.this, "Sign in failed", Toast.LENGTH_LONG).show();
+                    } else {
+                        Intent i = new Intent(MainActivity.this, LoginTestActivity.class);
+                        startActivity(i);
                     }
                 }
             });
