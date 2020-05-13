@@ -17,25 +17,25 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button showPie;
+//    private Button showPie;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        showPie = (Button) findViewById(R.id.showPie);
-        showPie.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openPieChartActivity();
-            }
-        });
+//        showPie = (Button) findViewById(R.id.showPie);
+//        showPie.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openPieChartActivity();
+//            }
+//        });
     }
 
-    private void openPieChartActivity() {
-        Intent pieIntent = new Intent(this, PieChartActivity.class);
-        startActivity(pieIntent);
-    }
+//    private void openPieChartActivity() {
+//        Intent pieIntent = new Intent(this, PieChartActivity.class);
+//        startActivity(pieIntent);
+//    }
 
 }
